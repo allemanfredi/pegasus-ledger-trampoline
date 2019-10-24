@@ -13,7 +13,6 @@ class LedgerTrampoline extends React.Component {
   }
 
   registerEventListener() {
-    console.log("cii")
     window.addEventListener('message', e => {
       if (e && e.data && e.data.target === 'ledger-iframe') {
         console.log(e)
