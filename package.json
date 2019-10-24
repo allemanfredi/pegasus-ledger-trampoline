@@ -1,0 +1,37 @@
+{
+  "name": "@pegasus/trampoline",
+  "main": "index.js",
+  "version": "0.1.0",
+  "author": "allemanfredi <alle.manfredi@gmail.com>",
+  "homepage": "https://allemanfredi.github.io/pegasus-ledger-trampoline/",
+  "private": true,
+  "dependencies": {
+    "@ledgerhq/hw-transport-u2f": "^4.73.2",
+    "@ledgerhq/hw-transport-webusb": "^4.73.2",
+    "gh-pages": "^2.1.1",
+    "hw-app-iota": "^0.6.1",
+    "react": "^16.8.1",
+    "react-dom": "^16.4.2",
+    "react-scripts": "2.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "npx eslint . --fix",
+    "predeploy": "npm run build",
+    "deploy": "node publish.js"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
