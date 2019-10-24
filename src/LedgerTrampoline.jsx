@@ -6,14 +6,15 @@ class LedgerTrampoline extends React.Component {
 
   constructor() {
     super()
-    this.registerEventListener = this.registerEventListener.bind()
-    this.initLedger = this.initLedger.bind()
-    this.sendMessageToExtension = this.sendMessageToExtension.bind()
+    this.registerEventListener = this.registerEventListener.bind(this)
+    this.initLedger = this.initLedger.bind(this)
+    this.sendMessageToExtension = this.sendMessageToExtension.bind(this)
     this.registerEventListener()
   }
 
   registerEventListener() {
-    window.addEventListener('message', function (e) {
+    console.log("cii")
+    window.addEventListener('message', e => {
       if (e && e.data && e.data.target === 'ledger-iframe') {
         console.log(e)
         const action = e.data.action
