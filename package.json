@@ -1,5 +1,5 @@
 {
-  "name": "@pegasus/trampoline",
+  "name": "pegasus-ledger-trampoline",
   "main": "index.js",
   "version": "0.1.0",
   "author": "allemanfredi <alle.manfredi@gmail.com>",
@@ -7,7 +7,6 @@
   "private": true,
   "dependencies": {
     "@ledgerhq/hw-transport-u2f": "^4.73.2",
-    "@ledgerhq/hw-transport-webusb": "^4.73.2",
     "gh-pages": "^2.1.1",
     "hw-app-iota": "^0.6.1",
     "react": "^16.8.1",
@@ -21,7 +20,7 @@
     "eject": "react-scripts eject",
     "lint": "npx eslint . --fix",
     "predeploy": "npm run build",
-    "deploy": "node publish.js"
+    "deploy": "gh-pages -d build"
   },
   "babel": {
     "presets": [
