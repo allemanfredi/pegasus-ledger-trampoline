@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/pegasus-ledger-trampoline/static/js/runtime~main.f3822867.js"
   },
   {
-    "revision": "b17be675aef3310613be",
-    "url": "/pegasus-ledger-trampoline/static/js/main.b17be675.chunk.js"
+    "revision": "9a69b3527abd6ae033aa",
+    "url": "/pegasus-ledger-trampoline/static/js/main.9a69b352.chunk.js"
   },
   {
     "revision": "e09378299e922219262d",
     "url": "/pegasus-ledger-trampoline/static/js/1.e0937829.chunk.js"
   },
   {
-    "revision": "83b6254564a30e926c1288f0d8d11073",
+    "revision": "7416a614ef81becd5c84642686ad78ac",
     "url": "/pegasus-ledger-trampoline/index.html"
   }
 ];
