@@ -13,8 +13,6 @@ class LedgerTrampoline extends React.Component {
   }
 
   registerEventListener() {
-    const _this = this
-    console.log("register")
     window.addEventListener('message', function (e) {
       if (e && e.data && e.data.target === 'ledger-iframe') {
         console.log(e)
@@ -24,13 +22,10 @@ class LedgerTrampoline extends React.Component {
         const replyAction = action + '-reply'
         switch (action) {
           case 'ledger-init': 
-            _this.initLedger(replyAction)
+            this.initLedger(replyAction)
             break
-          /*case 'ledger-unlock':
-            _this.unlock(replyAction, params.hdPath)
-            break*/
           default:
-            _this.sendMessageToExtension({
+            this.sendMessageToExtension({
               action: replyAction,
               success: false,
               payload: null
