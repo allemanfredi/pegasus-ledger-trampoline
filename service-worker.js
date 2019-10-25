@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/pegasus-ledger-trampoline/precache-manifest.b20df8d36476fa87de1ad79390837acd.js"
+  "/pegasus-ledger-trampoline/precache-manifest.a9c4dbec7bb706b64458ab97c0b3a684.js"
 );
 
 workbox.clientsClaim();
